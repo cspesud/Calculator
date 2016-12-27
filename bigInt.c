@@ -20,6 +20,8 @@ void freeBigInt(BigInt* number){
         free(tmp);
     }
     
+    free (number);
+    
 }
 
 void addUnitToHead(BigInt* number,BigIntUnit* unit){

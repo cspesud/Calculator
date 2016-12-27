@@ -171,6 +171,8 @@ BigInt* mul(BigInt* leftValue,BigInt* rightValue){
             BigInt* tmp = result;
             result = add(result, tmpResult);
             freeBigInt(tmp);
+            
+            freeBigInt(tmpResult);
             i++;
             
         }
